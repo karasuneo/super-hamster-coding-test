@@ -5,10 +5,21 @@
   align-items: center;
   gap: $xl;
 
+  @include mq(lg) {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: $sm;
+  }
+
   .titleContainer {
     display: flex;
     width: 50%;
     flex-direction: column;
+
+    @include mq(lg) {
+      text-align: center;
+    }
   }
 
   .checkBoxContainer {
