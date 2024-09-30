@@ -9,10 +9,11 @@ import useWidth from '@/hooks/useWidth';
 
 type Props = {
   text: string;
+  target: string;
   icon: ReactElement;
 };
 
-function ButtonList({ text, icon }: Props) {
+function ButtonList({ text, target, icon }: Props) {
   const buttonSize = useRecoilValue(buttonSizeState);
   const buttonType = useRecoilValue(buttonTypeState);
   const buttonIconPosition = useRecoilValue(buttonIconPositionState);
@@ -29,6 +30,7 @@ function ButtonList({ text, icon }: Props) {
           <ButtonStateList
             text={text}
             sizes={buttonSize}
+            target={target}
             isDark={buttonType === 'dark' ? true : false}
             outline={buttonType === 'outline' ? true : false}
           />
@@ -41,6 +43,7 @@ function ButtonList({ text, icon }: Props) {
           <ButtonStateList
             text={text}
             sizes={buttonSize}
+            target={target}
             isDark={buttonType === 'dark' ? true : false}
             outline={buttonType === 'outline' ? true : false}
             leftIcon={icon}
@@ -54,6 +57,7 @@ function ButtonList({ text, icon }: Props) {
           <ButtonStateList
             text={text}
             sizes={buttonSize}
+            target={target}
             isDark={buttonType === 'dark' ? true : false}
             outline={buttonType === 'outline' ? true : false}
             rightIcon={icon}

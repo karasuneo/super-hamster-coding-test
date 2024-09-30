@@ -8,6 +8,7 @@ import { Size } from '@/types/button';
 type Props = {
   text: string;
   sizes?: Size;
+  target?: string;
   isDark?: boolean;
   outline?: boolean;
   buttonTitle?: string;
@@ -18,6 +19,7 @@ type Props = {
 function ButtonStateList({
   text,
   sizes,
+  target,
   isDark = false,
   outline = false,
   leftIcon,
@@ -31,6 +33,17 @@ function ButtonStateList({
         <Button
           text={text}
           size={sizes}
+          isDark={isDark}
+          outline={outline}
+          isLoading={isLoading}
+          leftIcon={leftIcon}
+          rightIcon={rightIcon}
+          onClick={() => handleButtonClick()}
+        />
+        <Button
+          text={text}
+          size={sizes}
+          target={target}
           isDark={isDark}
           outline={outline}
           isLoading={isLoading}

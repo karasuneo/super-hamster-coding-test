@@ -11,7 +11,11 @@ function Home() {
       <div className={styles.container}>
         <section className={styles.buttonSection}>
           <div className={styles.buttonListContainer}>
-            <ButtonList text="編集" icon={<EditIcon />} />
+            <ButtonList
+              text="編集"
+              target="https://super-hamster.com/"
+              icon={<EditIcon />}
+            />
           </div>
           <div className={styles.checkBoxListContainer}>
             <ChangeButtonIconPositionCheckBoxList />
