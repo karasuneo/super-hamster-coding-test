@@ -1,5 +1,5 @@
 import CheckBox from '@/components/CheckBox';
-import { BUTTON_TYPE_LIST } from '@/const/size';
+import { BUTTON_TYPE_LIST } from '@/const/button';
 import { useRecoilValue } from 'recoil';
 import { Size } from '@/types/button';
 import Title from '@/components/Title';

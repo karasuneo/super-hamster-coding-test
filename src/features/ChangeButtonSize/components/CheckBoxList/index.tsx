@@ -1,12 +1,12 @@
 import CheckBox from '@/components/CheckBox';
-import { SIZE_LIST } from '@/const/size';
+import { SIZE_LIST } from '@/const/button';
 
 import { useRecoilValue } from 'recoil';
 import { Size } from '@/types/button';
 import { buttonSizeState } from '@/stores/buttonSize';
 import Title from '@/components/Title';
-import useSize from '../../hooks/useSize';
 import CheckBoxLayout from '@/layouts/CheckBoxes';
+import useButtonSize from '../../hooks/useButtonSize';
 
 type Props = {
   sizes?: Size;
@@ -14,7 +14,7 @@ type Props = {
 
 function ChangeButtonSizeCheckBoxList({ sizes = 'md' }: Props) {
   const buttonSize = useRecoilValue(buttonSizeState);
-  const { handleCheckBoxChange } = useSize();
+  const { handleCheckBoxChange } = useButtonSize();
 
   return (
     <>

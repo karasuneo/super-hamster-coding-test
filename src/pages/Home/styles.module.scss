@@ -1,19 +1,38 @@
 .container {
+  display: flex;
   width: 100%;
   height: 100vh;
 
-  .darkButtonSection {
-    height: 33%;
+  @include mq(lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonSection {
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     gap: $md;
 
+    @include mq(lg) {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
     .buttonListContainer {
       display: flex;
       width: 60%;
+      padding: $md;
       flex-direction: column;
       justify-content: center;
+      background-color: $background-color;
+
+      @include mq(lg) {
+        width: 100%;
+      }
     }
 
     .checkBoxListContainer {
@@ -21,9 +40,14 @@
       align-items: center;
       width: 30%;
       border-radius: 10px;
-      gap: 20px;
+      gap: $xl;
       flex-direction: column;
       justify-content: center;
+
+      @include mq(lg) {
+        // height: 40%;
+        width: 100%;
+      }
     }
   }
 

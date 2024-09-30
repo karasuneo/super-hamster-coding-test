@@ -1,0 +1,6 @@
+:export {
+  sm: map-get($breakpoints, 'sm');
+  md: map-get($breakpoints, 'md');
+  lg: map-get($breakpoints, 'lg');
+  xl: map-get($breakpoints, 'xl');
+}
