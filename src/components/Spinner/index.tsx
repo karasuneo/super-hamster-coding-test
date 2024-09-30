@@ -1,4 +1,4 @@
-import { Size } from '@/types/size';
+import { Size } from '@/types/button';
 import { LOADING_SIZE_MAP } from '../Button/const';
 import styles from './styles.module.scss';
 

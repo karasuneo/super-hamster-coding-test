@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import useButtonState from '@/features/DisplayButton/hooks/useButtonState';
 import { IconProps } from '@/features/DisplayButton/types/icon';
 import { ReactElement } from 'react';
-import { Size } from '@/types/size';
+import { Size } from '@/types/button';
 
 type Props = {
   text: string;
