@@ -6,7 +6,7 @@ import {
 } from 'react';
 import styles from './styles.module.scss';
 import { BUTTON_FONT_SIZE_MAP, BUTTON_SIZE_MAP } from './const';
-import { isUrl } from '@/utils/url';
+import { isValidUrl } from '@/utils/url';
 import { IconProps } from '@/features/DisplayButton/types/icon';
 import Spinner from '../Spinner';
 import { Size } from '@/types/button';
@@ -50,7 +50,7 @@ function Button({
     : rightIcon;
 
   const handleButtonClick = () => {
-    if (target && isUrl(target)) {
+    if (target && isValidUrl(target)) {
       window.location.href = target;
     }
     onClick();
