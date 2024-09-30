@@ -1,0 +1,72 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $button-gap;
+  border-radius: $radius-md;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color $transition-time;
+
+  &.light {
+    color: $button-background-dark-color;
+    background-color: $button-background-light-color;
+
+    &:hover {
+      background-color: $button-hover-background-light-color;
+    }
+
+    &:active {
+      background-color: $button-active-background-light-color;
+    }
+
+    &:disabled {
+      opacity: $opacity-disabled;
+      cursor: not-allowed;
+
+      &:hover &:active {
+        background-color: $button-background-light-color;
+      }
+    }
+
+    &.loading {
+      opacity: $opacity-loading;
+      cursor: wait;
+
+      &:hover &:active {
+        background-color: $button-background-light-color;
+      }
+    }
+  }
+
+  &.dark {
+    color: $button-background-light-color;
+    background-color: $button-background-dark-color;
+
+    &:hover {
+      background-color: $button-hover-background-dark-color;
+    }
+
+    &:active {
+      background-color: $button-active-background-dark-color;
+    }
+
+    &:disabled {
+      opacity: $opacity-disabled;
+      cursor: not-allowed;
+
+      &:hover &:active {
+        background-color: $button-background-dark-color;
+      }
+    }
+
+    &.loading {
+      opacity: $opacity-loading;
+      cursor: wait;
+
+      &:hover &:active {
+        background-color: $button-background-dark-color;
+      }
+    }
+  }
+}

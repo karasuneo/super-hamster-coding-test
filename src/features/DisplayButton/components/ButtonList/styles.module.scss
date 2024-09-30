@@ -1,0 +1,8 @@
+.buttonStateListContainer {
+  display: flex;
+  border-radius: $radius-md;
+  padding: $lg;
+  background-color: #cbd5e0;
+  gap: $button-list-gap;
+  justify-content: center;
+}
