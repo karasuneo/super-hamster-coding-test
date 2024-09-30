@@ -1,0 +1,21 @@
+:export {
+  primaryColor: $primary-color;
+  primaryLightColor: $primary-light-color;
+  textColor: $text-color;
+  errorColor: $error-color;
+  backgroundColor: $background-color;
+
+  barBackgroundColor: $bar-background-color;
+  shadowColor: $shadow-color;
+
+  buttonBackgroundDarkColor: $button-background-dark-color;
+  buttonBackgroundLightColor: $button-background-light-color;
+  buttonBorderColor: $button-border-color;
+  buttonHoverBackgroundLightColor: $button-hover-background-light-color;
+  buttonActiveBackgroundLightColor: $button-active-background-light-color;
+  buttonHoverBackgroundDarkColor: $button-hover-background-dark-color;
+  buttonActiveBackgroundDarkColor: $button-active-background-dark-color;
+
+  lightSvgColor: $light-svg-color;
+  darkSvgColor: $dark-svg-color;
+}
