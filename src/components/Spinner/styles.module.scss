@@ -1,0 +1,20 @@
+.spinner {
+  border-radius: $radius-max;
+  animation: spin 0.6s linear infinite;
+
+  &.light {
+    border: $spinner-size solid $spinner-light-color;
+    border-top: $spinner-size solid $spinner-dark-color;
+  }
+
+  &.dark {
+    border: $spinner-size solid $spinner-dark-color;
+    border-top: $spinner-size solid $spinner-light-color;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
