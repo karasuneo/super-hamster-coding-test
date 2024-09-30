@@ -4,13 +4,12 @@ import {
   isValidElement,
   ReactElement,
 } from 'react';
-import localStyles from './styles.module.scss';
-import globalStyles from '@/styles/colors.module.scss';
-
+import styles from './styles.module.scss';
 import { BUTTON_FONT_SIZE_MAP, BUTTON_SIZE_MAP } from './const';
 import { isUrl } from '@/utils/url';
 import { IconProps } from '@/features/DisplayButton/types/icon';
 import Spinner from '../Spinner';
+import { Size } from '@/types/button';
 
 type Props = {
   text: string;
@@ -22,7 +21,7 @@ type Props = {
   isLoading?: boolean;
   leftIcon?: ReactElement<IconProps>;
   rightIcon?: ReactElement<IconProps>;
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  size?: Size;
   onClick: () => void;
 };
 
@@ -42,9 +41,6 @@ function Button({
   const buttonStyle: CSSProperties = {
     ...BUTTON_SIZE_MAP[size],
     ...BUTTON_FONT_SIZE_MAP[size],
-    border: outline
-      ? `${globalStyles.borderSize} solid ${globalStyles.buttonBorderColor}`
-      : 'none',
   };
   const clonedLeftIcon = isValidElement(leftIcon)
     ? cloneElement(leftIcon, { isDark })
@@ -63,7 +59,7 @@ function Button({
   return (
     <button
       disabled={disabled || isLoading}
-      className={`${localStyles.button} ${isDark ? localStyles.dark : localStyles.light} ${isLoading ? localStyles.loading : ''}`}
+      className={`${styles.button} ${outline ? styles.outline : styles.noneOutline} ${isDark ? styles.dark : styles.light} ${isLoading ? styles.loading : ''}`}
       style={buttonStyle}
       type={type}
       onClick={handleButtonClick}

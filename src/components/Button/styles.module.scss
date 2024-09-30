@@ -7,38 +7,23 @@
   cursor: pointer;
   font-weight: bold;
   transition: background-color $transition-time;
+  border: none;
 
-  &.light {
-    color: $button-background-dark-color;
-    background-color: $button-background-light-color;
-
-    &:hover {
-      background-color: $button-hover-background-light-color;
-    }
-
-    &:active {
-      background-color: $button-active-background-light-color;
-    }
-
-    &:disabled {
-      opacity: $opacity-disabled;
-      cursor: not-allowed;
-
-      &:hover &:active {
-        background-color: $button-background-light-color;
-      }
-    }
-
-    &.loading {
-      opacity: $opacity-loading;
-      cursor: wait;
-
-      &:hover &:active {
-        background-color: $button-background-light-color;
-      }
-    }
+  &.outline {
+    border: $border-size solid $button-border-color;
   }
 
+  &.loading {
+    opacity: $opacity-loading;
+    cursor: wait;
+  }
+
+  &:disabled {
+    opacity: $opacity-disabled;
+    cursor: not-allowed;
+  }
+
+  &.light,
   &.dark {
     color: $button-background-light-color;
     background-color: $button-background-dark-color;
@@ -51,21 +36,16 @@
       background-color: $button-active-background-dark-color;
     }
 
-    &:disabled {
-      opacity: $opacity-disabled;
-      cursor: not-allowed;
+    &.light {
+      color: $button-background-dark-color;
+      background-color: $button-background-light-color;
 
-      &:hover &:active {
-        background-color: $button-background-dark-color;
+      &:hover {
+        background-color: $button-hover-background-light-color;
       }
-    }
 
-    &.loading {
-      opacity: $opacity-loading;
-      cursor: wait;
-
-      &:hover &:active {
-        background-color: $button-background-dark-color;
+      &:active {
+        background-color: $button-active-background-light-color;
       }
     }
   }
