@@ -1,9 +1,34 @@
-.buttonListContainer {
-  .buttonListSection {
+.container {
+  width: 100%;
+  height: 100vh;
+
+  .darkButtonSection {
+    height: 33%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: $button-list-gap;
+    justify-content: space-around;
+    gap: $md;
+
+    .buttonListContainer {
+      display: flex;
+      width: 60%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .checkBoxListContainer {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      border-radius: 10px;
+      gap: 20px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .checkBoxSection {
+    height: 100%;
+    width: 40%;
   }
 }
