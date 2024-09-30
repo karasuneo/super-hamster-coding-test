@@ -6,6 +6,7 @@ import { buttonSizeState } from '@/stores/buttonSize';
 import { buttonTypeState } from '@/stores/buttonType';
 import { buttonIconPositionState } from '@/stores/buttonIconPosition';
 import useWidth from '@/hooks/useWidth';
+
 type Props = {
   text: string;
   icon: ReactElement;
