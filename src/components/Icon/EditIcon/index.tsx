@@ -1,5 +1,5 @@
 import styles from '@/styles/colors.module.scss';
-import { IconProps } from '@/types/icon';
+import { IconProps } from '@/features/DisplayButton/types/icon';
 
 function EditIcon({ isDark = false }: IconProps) {
   return (

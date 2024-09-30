@@ -1,7 +1,7 @@
 import EditIcon from '@/components/Icon/EditIcon';
 import styles from './styles.module.scss';
-
 import ButtonList from '@/features/DisplayButton/components/ButtonList';
+
 function Home() {
   return (
     <>

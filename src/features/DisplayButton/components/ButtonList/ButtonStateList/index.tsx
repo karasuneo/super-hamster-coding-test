@@ -1,7 +1,7 @@
 import Button from '@/components/Button';
 import styles from './styles.module.scss';
 import useButtonState from '@/features/DisplayButton/hooks/useButtonState';
-import { IconProps } from '@/types/icon';
+import { IconProps } from '@/features/DisplayButton/types/icon';
 import { ReactElement } from 'react';
 
 type Props = {

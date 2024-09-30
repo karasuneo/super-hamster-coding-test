@@ -9,7 +9,7 @@ import globalStyles from '@/styles/colors.module.scss';
 
 import { BUTTON_FONT_SIZE_MAP, BUTTON_SIZE_MAP } from './const';
 import { isUrl } from '@/utils/url';
-import { IconProps } from '@/types/icon';
+import { IconProps } from '@/features/DisplayButton/types/icon';
 import Spinner from '../Spinner';
 
 type Props = {
