@@ -1,0 +1,7 @@
+.buttonListContainer {
+  display: flex;
+  border-radius: $radius-md;
+  gap: $button-list-gap;
+  flex-direction: column;
+  justify-content: center;
+}
