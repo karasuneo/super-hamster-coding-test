@@ -3,10 +3,11 @@ import styles from './styles.module.scss';
 import useButtonState from '@/features/DisplayButton/hooks/useButtonState';
 import { IconProps } from '@/features/DisplayButton/types/icon';
 import { ReactElement } from 'react';
+import { Size } from '@/types/size';
 
 type Props = {
   text: string;
-  sizes?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  sizes?: Size;
   isDark?: boolean;
   outline?: boolean;
   buttonTitle?: string;

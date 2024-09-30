@@ -1,9 +1,10 @@
+import { Size } from '@/types/size';
 import { LOADING_SIZE_MAP } from '../Button/const';
 import styles from './styles.module.scss';
 
 type Props = {
   isDark?: boolean;
-  s: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  s: Size;
 };
 
 function Spinner({ isDark = false, s }: Props) {

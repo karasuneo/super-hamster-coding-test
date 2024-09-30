@@ -11,6 +11,7 @@ import { BUTTON_FONT_SIZE_MAP, BUTTON_SIZE_MAP } from './const';
 import { isUrl } from '@/utils/url';
 import { IconProps } from '@/features/DisplayButton/types/icon';
 import Spinner from '../Spinner';
+import { Size } from '@/types/size';
 
 type Props = {
   text: string;
@@ -22,7 +23,7 @@ type Props = {
   isLoading?: boolean;
   leftIcon?: ReactElement<IconProps>;
   rightIcon?: ReactElement<IconProps>;
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  size?: Size;
   onClick: () => void;
 };
 

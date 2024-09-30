@@ -1,11 +1,10 @@
+import { Size } from '@/types/size';
 import { useState } from 'react';
 
 function useButtonSize() {
-  const [buttonSize, setButtonSize] = useState<
-    'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  >('md');
+  const [buttonSize, setButtonSize] = useState<Size>('md');
 
-  const onChangeButtonSize = (size: 'xs' | 'sm' | 'md' | 'lg' | 'xl') => {
+  const onChangeButtonSize = (size: Size) => {
     setButtonSize(size);
   };
 
