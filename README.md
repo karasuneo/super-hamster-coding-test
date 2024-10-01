@@ -4,6 +4,10 @@
 
 https://super-hamster-coding-test.vercel.app/
 
+### ディレクトリ構成の説明
+
+https://github.com/karasuneo/super-hamster-coding-test/blob/dev/src/README.md
+
 ### 動作環境
 
 | node.js | v22.7.3 |
